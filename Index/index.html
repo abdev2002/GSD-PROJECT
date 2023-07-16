@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <Style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            width: 100vw;
+            height: 100vh;
+            background-color: #F3F9FB;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .container {
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+            position: absolute;
+            width: fit-content;
+        }
+
+        @keyframes moveRight {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 270px;
+            }
+        }
+
+        .line {
+            animation: moveRight 3000ms 1 normal forwards;
+            animation-timing-function: ease-out;
+            position: absolute;
+            z-index: -1;
+            width: 270px;
+            height: 7px;
+            background-color: #7CB1D0;
+            border-radius: 3px;
+            translate: 0% 100%;
+        }
+
+        .mold {
+            position: absolute;
+            z-index: -10;
+            width: 270px;
+            height: 7px;
+            background-color: #d6d6d6;
+            border-radius: 3px;
+            translate: 0% 100%;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/assets/logo.png" alt="Inventory">
+        <div class="line">
+        </div>
+        <div class="mold">
+        </div>
+    </div>
+    <script src="/Index/Index.js"></script>
+    <script>
+        // Wait for the animation to complete
+        const lineElement = document.querySelector('.line');
+        lineElement.addEventListener('animationend', () => {
+          // Open a new window or perform any desired action here
+          window.location = "/Login/login.html"; 
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap');
+
+@media (max-width: 500px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        max-width: 100vw !important;
+    }
+
+    .header {
+        position: inherit;
+        z-index: 5;
+    }
+
+    .btnname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .block {
+        position: inherit;
+        display: block;
+        grid-template-columns: 1fr;
+        z-index: 1;
+    }
+
+    .transaction {
+        padding: 0px;
+    }
+
+    .options {
+        z-index: 3;
+    }
+
+    .pagename {
+        color: white;
+        width: min-content;
+        padding-left: 20px;
+        display: block;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F3F9FB;
+        border: 1px solid #4796BD;
+        width: fit-content;
+    }
+
+
+    .button {
+        width: 190px !important;
+    }
+
+    .details {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .personal{
+        text-align: center;
+    }
+
+    .info {
+        padding: 0%;
+    }
+
+    .info h2{
+        margin-left: 20px;
+    }
+}

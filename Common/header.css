@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    background-color: #F3F9FB;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #4796bdc4;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 0.8fr 0.8fr 1fr 0.5fr;
+}
+
+.skyblock {
+    height: 10px;
+    width: auto;
+    margin: 0px 20px;
+    background-color: #F3F9FB;
+}
+
+.userimg{
+    height: 50px;
+    width: 50px;
+    margin: 0px 20px;
+    background-color: #F3F9FB;
+    border-radius: 50px;
+    color: #4796BD;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.face{
+    font-size: 50px !important;
+}
+
+.logo {
+    background-image: url(/assets/logo-horizontal.png);
+    height: 70px;
+    width: 400px;
+    background-size: cover;
+}
+
+
+@media (max-width: 500px) {    
+    .header {
+        display: none;
+    }
+    
+    .skyblock {
+        display: none;
+    }
+    
+    .userimg{
+    display: none;
+    }
+    
+    .face{
+        display: none;
+    }
+    
+    .logo {
+    display: none;
+    }
+}

@@ -1,0 +1,71 @@
+@media (max-width: 500px) {
+    .icon {
+        font-size: 36px !important;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .pagename {
+        color: white;
+        width: min-content;
+        padding-left: 20px;
+        display: block;
+    }
+
+    span {
+        font-size: 36px !important;
+        color: #7CB1D0;
+        cursor: pointer;
+
+    }
+
+    .optText {
+        display: block;
+        color: #828282;
+        cursor: pointer;
+
+    }
+
+    .options {
+        padding-top: 0px;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 0%;
+        top: 0%;
+        padding-top: 30px;
+        display: block;
+        position: absolute;
+        height: 100vh !important; 
+        z-index: 3;
+        margin-top: 50px;
+    }
+
+    .option {
+        justify-content: center;
+        height: 50px;
+        align-content: center;
+        margin: 10px 0px;
+        width: 288px;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 1fr 4fr;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    .option:hover {
+        border-left: 3px solid #828282;
+        width: 285px;
+    }
+
+
+    .options {
+        background-color: white;
+    }
+
+    .block {
+        top: 0%;
+    }
+}

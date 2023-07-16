@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="/Common/header.css">
+    <link rel="stylesheet" href="/Common/navigation.css">
+    <link rel="stylesheet" href="/Common/Mobile-header.css">
+    <link rel="stylesheet" href="/Common/Mobile-navigation.css">
+    <link rel="stylesheet" href="/Inventory/profile-mobile.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="btnname">
+            <div class="blockbtn" role="button" id="blockbtn" onclick="showOption()">
+                <div class="btnline"></div>
+                <div class="btnline"></div>
+                <div class="btnline"></div>
+            </div>
+            <h2 class="pagename" id="page"></h2>
+        </div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="userimg" role="button" onclick="profile()">
+            <span class="material-symbols-outlined face">
+                <!-- face -->
+            </span>
+        </div>
+
+    </div>
+    <div class="block">
+        <div class="blockchild options container" id="options">
+            <div class="option" id="opt1" onclick="optOne()">
+                <div class="icon"><span class="material-symbols-outlined">
+                        home
+                    </span></div>
+                <div class="optText">Home</div>
+            </div>
+            <div class="option" id="opt2" role="button">
+                <div class="icon"><span class="material-symbols-outlined">
+                        inventory_2
+                    </span></div>
+                <div class="optText">Inventory</div>
+            </div>
+            <div class="option" id="opt3" role="button">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                </div>
+                <div class="optText">Employees</div>
+            </div>
+            <div class="option" id="opt4" role="button" onclick="optFour()">
+                <div class="icon"><span class="material-symbols-outlined">
+                        receipt_long
+                    </span></div>
+                <div class="optText">Transaction</div>
+            </div>
+        </div>
+        <div class="blockchild info">
+            <h2>Profile</h2>
+            <div class="details">
+                <div class="circle">
+                    <img src="userImg" alt="">
+                </div>
+                <div class="personal">
+                    <h1 id="name">USERNAME</h1>
+                    <h5 id="email">EMAIL
+                    </h5>
+                    <h5 id="date">YEARS
+                    </h5>
+                </div>
+                <div class="editDiv">
+                    <button class="button" id="btn" onclick="edit()">
+                        <div class="editicon"><span class="material-symbols-outlined edit">
+                            edit
+                        </span></div>
+                    <div class="editText">Edit</div>    
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+    <script src="/Common/navigation.js"></script>
+</body>
+
+</html>

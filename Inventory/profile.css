@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap');
+
+.block{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.container{
+    background-color: white;
+}
+
+
+.info {
+    padding: 50px;
+}
+
+
+h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #122E40;
+    margin: 0%;
+}
+
+h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #122E40;
+}
+
+h5 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #828282;
+    margin: 0%;
+}
+
+.circle{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: #828282;
+    border-radius: 50%;
+}
+
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.personal {
+    padding: 20px;
+}
+
+.edit{
+    text-align: center;
+    font-size: 18px !important;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F9FB;
+    border: 1px solid #4796BD;
+
+}
+
+.editText{
+    font-size: 28px !important;
+    margin: 0px 10px;
+    color:  #7CB1D0;;
+}

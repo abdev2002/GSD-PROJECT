@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap');
+
+@media (min-width: 1020) {
+    .container {
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5% 5%;
+        position: absolute;
+        width: 60vw;
+        height: 400px;
+        background: #FFFFFE;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .ilustration {
+        height: 100%;
+        width: 100%;
+        background-image: url(/assets/Illustration.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: brown;
+    }
+
+    .scan {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .scan h1 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        color: #122E40;
+    }
+
+    .child {
+        border-radius: 10px;
+        height: 50px;
+        width: auto;
+        max-width: 367px;
+        background-color: #E0E0E0;
+        border: none;
+        margin: 2% 0%;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .button {
+        background-color: #4796BD;
+        color: white;
+        width: 315px;
+        border-radius: 50px;
+        margin: 10% 9%;
+        font-size: 28px;
+    }
+
+    .reg {
+        display: flex;
+        text-align: center;
+        position: relative;
+        left: 25%;
+    }
+
+    .reg p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #828282;
+        margin: 0%;
+    }
+
+    a {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+        color: #495D69;
+    }
+
+}

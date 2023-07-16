@@ -1,0 +1,48 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3F9FB;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container{
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    position: absolute;
+    width: fit-content;
+}
+
+@keyframes moveRight {
+    from {
+      transform: translateX(0);
+      width: 270px;
+    }
+    to {
+      transform: translateX(270px);
+      width: 0px;
+    }
+  }
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: #F3F9FB;
+    z-index: 1000;
+    animation: moveRight 5000ms 1 normal forwards;
+    animation-timing-function: steps(10, end);
+    height: 20px;
+}
+
+.line{
+    position: absolute;
+    z-index: -10;
+    width: 270px;
+    height: 7px;
+    background-color:  #7CB1D0;
+    translate: 0% -200%;
+}

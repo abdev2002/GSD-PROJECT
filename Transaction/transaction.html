@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="/Common/header.css">
+    <link rel="stylesheet" href="/Common/navigation.css">
+    <link rel="stylesheet" href="/Common/Mobile-header.css">
+    <link rel="stylesheet" href="/Transaction//transaction-mobile.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/Common/Mobile-navigation.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="btnname">
+            <div class="blockbtn" role="button" id="blockbtn" onclick="showOption()">
+                <div class="btnline"></div>
+                <div class="btnline"></div>
+                <div class="btnline"></div>
+            </div>
+            <h2 class="pagename" id="page"></h2>
+        </div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="userimg" role="button" onclick="profile()">
+            <span class="material-symbols-outlined face">
+                <!-- face -->
+            </span>
+        </div>
+
+    </div>
+    <div class="block">
+        <div class="blockchild  options" id="options">
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        home
+                    </span></div>
+                <div class="optText">Home</div>
+            </div>
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        inventory_2
+                    </span></div>
+                <div class="optText">Inventory</div>
+            </div>
+            <div class="option">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                </div>
+                <div class="optText">Employees</div>
+            </div>
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        receipt_long
+                    </span></div>
+                <div class="optText">Transaction</div>
+            </div>
+        </div>
+        <div class="blockchild transaction">
+            <div class="navigation">
+                <div class="link" role="button" onclick="buy()">Buy</div>
+                <div class="link" role="button" onclick="sell()">Sell</div>
+                <div class="link" role="button" onclick="history()">History</div>
+            </div>
+
+            <div class="container buy" id="buyContainer">
+                <h1>Buy Items</h1>
+                <hr class="topline">
+                <div class="scan">
+                    <div>
+                        <h2>Supplier</h2>
+                    </div>
+                    <div>
+                        <input class="child" type="text" placeholder="Name" id="name">
+                        <input class="child" type="text" placeholder="Phone No" id="pno">
+                        <input class="child" type="text" placeholder="Address" id="address">
+                    </div>
+                </div>
+                <hr>
+                <div class="scan">
+                    <div>
+                        <h2>Product</h2>
+                    </div>
+                    <div>
+                        <input class="child" type="text" placeholder="Product Name" id="proName">
+                        <p class="proInfo">
+
+                        </p>
+                        <input class="child" type="text" placeholder="Price" id="price">
+                        <input class="child" type="text" placeholder="Quantity" id="quantity">
+                        <input class="child" type="text" placeholder="Expiry Date" id="expdate">
+                        <div class="adddiv">
+                            <button class="btn" id="btn" onclick="add()">
+                                <div class="addicon"><span class="material-symbols-outlined add">
+                                        add
+                                    </span></div>
+                                <div class="addText">Add Product</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <input class="child button" type="button" value="BUY" id="btn" onclick="buy()">
+            </div>
+            <div class="container sell" id="sellContainer">
+                <h1>Sell Items</h1>
+                <hr class="topline">
+                <div class="scan">
+                    <div>
+                        <h2>Customer</h2>
+                    </div>
+                    <div>
+                        <input class="child" type="text" placeholder="Name" id="name">
+                        <input class="child" type="text" placeholder="Phone No" id="pno">
+                        <input class="child" type="text" placeholder="Address" id="address">
+                    </div>
+                </div>
+                <hr>
+                <div class="scan">
+                    <div>
+                        <h2>Product</h2>
+                    </div>
+                    <div>
+                        <input class="child" type="text" placeholder="Product Name" id="proName">
+                        <p class="proInfo">
+
+                        </p>
+                        <input class="child" type="text" placeholder="Price" id="price">
+                        <input class="child" type="text" placeholder="Quantity" id="quantity">
+                        <input class="child" type="text" placeholder="Expiry Date" id="expdate">
+                        <div class="adddiv">
+                            <button class="btn" id="btn" onclick="add()">
+                                <div class="addicon"><span class="material-symbols-outlined add">
+                                        add
+                                    </span></div>
+                                <div class="addText">Add Product</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <input class="child button" type="button" value="Sell" id="sell" onclick="sell()">
+            </div>
+            <div class="history" id="historyContainer">
+                <table class="historytable" id="mytable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="transaction.js"></script>
+    <script src="/Common/navigation.js"></script>
+    <script src="/Transaction/history.js"></script>
+</body>
+
+</html>

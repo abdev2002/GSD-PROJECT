@@ -1,0 +1,43 @@
+@media (max-width: 500px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        background-color: #4796bd;
+        z-index: 15000;
+    }
+
+    .skyblock {
+        display: none;
+    }
+
+    .userimg {
+        display: flex;
+        height: 30px;
+        width: 30px;
+    }
+
+    .face {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .blockbtn {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .btnline {
+        margin-top: 2px;
+        width: auto;
+        height: 7px;
+        background-color: #F3F9FB;
+    }
+}

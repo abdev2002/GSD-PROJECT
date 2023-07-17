@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="show.css">
+    <link rel="stylesheet" href="/Common/header.css">
+    <link rel="stylesheet" href="/Common/navigation.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="userimg" role="button" onclick="profile()">
+            <span class="material-symbols-outlined face">
+                face
+            </span>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="blockchild  options">
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        home
+                    </span></div>
+                <div class="optText">Home</div>
+            </div>
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        inventory_2
+                    </span></div>
+                <div class="optText">Inventory</div>
+            </div>
+            <div class="option">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                </div>
+                <div class="optText">Employees</div>
+            </div>
+            <div class="option">
+                <div class="icon"><span class="material-symbols-outlined">
+                        receipt_long
+                    </span></div>
+                <div class="optText">Transaction</div>
+            </div>
+        </div>
+        <div class="blockchild Inventory">
+            <h2>Inventory</h2>
+            <div class="navigation">
+                <div class="link" role="button" onclick="All()">All</div>
+                <div class="link" role="button" onclick="NearExpiry()">NearExpiry</div>
+                
+            </div>
+
+            <div class="All" id="AllContainer">
+                <table class="Alltable" id="mytable">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Items</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mytableBody">
+                        </tbody> 
+                </table>
+           </div>
+         <div class="NearExpiry" id="NearExpiryContainer">
+                 <table class="NearExpirytable" id="table1">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Items</th>
+                                <th>Days Left</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table1Body">
+                   </tbody>
+                </table>
+            </div>
+    <script src="show.js"></script>
+    <script src="/Commmon/navigation.js"></script>
+    <script src="/show product/all.js"></script>
+    <script src="/show product/expiry.js"></script>
+</body>
+
+</html>

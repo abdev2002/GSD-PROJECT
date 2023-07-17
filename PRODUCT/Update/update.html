@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <div class="header">
+        <div>sjllfjlsjfl</div>
+        <div class="logo"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="skyblock"></div>
+        <div class="userimg" role="button" onclick="profile()">
+            <span class="material-symbols-outlined face">
+                face
+            </span>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="blockchild  container">
+            <div class="option" id="opt1" onclick="optOne()">
+                <div class="icon"><span class="material-symbols-outlined">
+                        home
+                    </span></div>
+            </div>
+                <div class="optText">Home</div>
+            </div>
+            <div class="option" id="opt2" role="button">
+                <div class="icon"><span class="material-symbols-outlined">
+                        inventory_2
+                    </span></div>
+            </div>
+                <div class="optText">Inventory</div>
+          </div>
+            <div class="option" id="opt3" role="button">
+                <div class="icon"><span class="material-symbols-outlined">
+                        group
+                    </span></div>
+            </div>
+                <div class="optText">Employees</div>
+            </div>
+            <div class="option" id="opt4" role="button" onclick="optFour()">
+                <div class="icon"><span class="material-symbols-outlined">
+                        receipt_long
+                    </span></div>
+                    </div>
+                <div class="optText">Transaction</div>
+            </div>
+    <div class="container">
+        <div class="Title">
+            Update Product 
+        </div>
+
+        <hr>
+        <div class="scan">
+            <div>
+                <h2>Product</h2>
+            
+        </div>
+
+            <div>
+                <input class="child" type="text" placeholder="Name" id="name">
+                <input class="child" type="text" placeholder="$" id="$">
+            </div>
+        </div>
+        <div class="scan">
+            <div>
+                Type
+            </div>
+        </div>
+            <div class="radio-group">
+                <label for="typeLoose">Loose</label>
+                <input type="radio" id="typeLoose" name="Type" value="Loose" required>
+                <label for="typePacked">Packed</label>
+                <input type="radio" id="typePacked" name="Type" value="Packed" required>
+            </div>
+        
+        
+        
+        <input class="child button" type="button" value="Update" id="btn" onclick="Update()">
+    </div>
+
+    
+    <script src="profile.js"></script>
+    <script src="/Common/navigation.js"></script>
+    <script src="update.js"></script>
+   
+    
+</body>
+
+</html>

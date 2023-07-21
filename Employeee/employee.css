@@ -146,29 +146,7 @@ hr {
     border: 1px solid rgb(167, 167, 167);
     width: 800px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #a383b8;
-  }
-  caption{
-    font-size: medium;
-    font-size: 'Times new Roman';
-    color: #122E40;
-    font-size: 38px;
-    font-weight: 700;
-  text-align: left;
-}
-  th, td {
-    padding: 10px;
-    border: 1px solid #ddddddfa;
-  }
-  
-  thead {
-    background-color: #4796BD;
-   color: antiquewhite;
-  
-  }
+
   .primary-button {
     position:fixed;
     right: 20px;
@@ -217,4 +195,56 @@ h2 {
     display: flex;
     justify-self: center;
     justify-content: center;
+}
+
+.emptable {
+    height: fit-content;
+    margin: 50px;
+    background: #FFFFFE;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: #E7EFF3;
+    color: #495D69;
+    width: 165px;
+    height: 50px;
+}
+
+td {
+    width: 165px;
+    height: 50px;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f8fead;
+
 }
